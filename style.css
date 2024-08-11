@@ -10,10 +10,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 10px;
   background: #e3f2fd;
 }
 .wrapper {
-  width: 780px;
   border-radius: 20px;
   padding: 35px 40px;
   background: #141414;
@@ -85,7 +85,7 @@ header.column span {
   border-radius: 0 0 5px 5px;
   background: linear-gradient(#333, #000);
 }
-.piano-keys .black:active {
+.piano-keys .black.active {
   box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
   background: linear-gradient(to bottom, #000, #434343);
 }
@@ -96,7 +96,7 @@ header.column span {
   border: 1px solid #000;
   background: linear-gradient(#fff 96%, #eee 4%);
 }
-.piano-keys .white:active {
+.piano-keys .white.active {
   box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
@@ -106,4 +106,7 @@ header.column span {
   width: 100%;
   font-size: 1.13rem;
   text-align: center;
+}
+.piano-keys .key.hide span {
+  display: none;
 }
